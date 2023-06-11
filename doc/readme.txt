@@ -13,4 +13,4 @@
 Размер пула и блока настраивается в определениях на уровне каждой архитектуры:
 
 YA_MEM_ALLOC_POOL_SIZE
-YA_MEM_ALLOC_POOL_SIZE
+YA_MEM_ALLOC_CHUNK_SIZE
