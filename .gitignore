@@ -1,0 +1,3 @@
+.vscode
+build*
+test/test_ya_mem

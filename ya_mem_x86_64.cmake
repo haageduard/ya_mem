@@ -1,0 +1,12 @@
+SET(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "")
+SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "")
+
+SET(CMAKE_SYSTEM_NAME Generic)
+SET(CMAKE_SYSTEM_PROCESSOR x86_64)
+
+ADD_DEFINITIONS(-DYA_MEM_ALLOC_POOL_SIZE=16384)
+ADD_DEFINITIONS(-DYA_MEM_ALLOC_CHUNK_SIZE=16)
+ADD_DEFINITIONS(-DYA_MEM_DEBUG)
+
+SET(CMAKE_C_FLAGS "-Og -g -std=c99 -fdata-sections -ffunction-sections -Wall" CACHE INTERNAL "c compiler flags")
+SET(CMAKE_EXE_LINKER_FLAGS "-static -Wl,-u,-Xlinker,-Map=output.map  -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group" CACHE INTERNAL "exe link flags")
