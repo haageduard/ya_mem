@@ -1,3 +1,5 @@
 .vscode
 build*
+!doc/build.txt
+!*.sh
 test/test_ya_mem
