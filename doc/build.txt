@@ -1,0 +1,26 @@
+Сборка под x86_x64:
+cd ya_mem
+mkdir build-x86_64
+cd build-x86_64
+cmake -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_TOOLCHAIN_FILE=../ya_mem_x86_64.cmake ..
+
+или используйте простой bash-скрипт build-arm-x86_64.sh
+
+Сборка под ARM-Cortex M3 non-RTOS:
+
+cd ya_mem
+mkdir build
+cd build
+cmake -DCMAKE_C_COMPILER=/usr/bin/arm-none-eabi-gcc -DCMAKE_TOOLCHAIN_FILE=../ya_mem_arm_cortex_m3_non_rtos.cmake ..
+
+или используйте простой bash-скрипт build-arm-cortex-m3-non-rtos.sh
+
+Сборка под ARM-Cortex M3 RTOS:
+cd ya_mem
+mkdir build
+cd build
+cmake -DCMAKE_C_COMPILER=/usr/bin/arm-none-eabi-gcc -DCMAKE_TOOLCHAIN_FILE=../ya_mem_arm_cortex_m3_rtos.cmake ..
+
+или используйте простой bash-скрипт build-arm-cortex-m3-rtos.sh
+
+Для каждой архитектуры представлен простой bash-скрипт
